@@ -5,10 +5,8 @@ public class main {
     static SQLServer server;
     public static void main(String[] args){
         //List<User> users = User.all();
-
-
-        User u1 = User.find(29);
-        u1.delete();
+        Club clubbie = new Club("smoking", 5);
+        clubbie.save();
 
         boolean appLoop = true;
         Scanner scanner = new Scanner(System.in);
